@@ -70,7 +70,15 @@ int _tmain(int argc, _TCHAR* argv[]) {
 				cout << "Number: " << number << " - FizzBuzz" << endl;
 
 				printResult(numGuess);
-				break;
+
+				// Prompt to ask if the user wants to play again.  
+				cout << "Would you like to play FizzBuz again? (1 = Yes, 2 = No): " << endl;
+				cin >> choice;
+
+				if (choice == 2)
+					break;
+				else
+					continue;
 
 			case 2:
 				cout << "Number: " << number << " - Fizz" << endl;
@@ -85,15 +93,9 @@ int _tmain(int argc, _TCHAR* argv[]) {
 			if (flag == 1){
 				break;
 			}
-				// Prompt to ask if the user wants to play again.  
-				cout << "Would you like to play FizzBuz again? (1 = Yes, 2 = No): " << endl;
-				cin >> choice;
-
-				if (choice == 2)
-					break;
 		}
 
-		return 0;
+		 return 0;
 	}
 
 	// Prototype FizzBuzz
